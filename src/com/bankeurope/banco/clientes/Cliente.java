@@ -21,6 +21,10 @@ public class Cliente implements InfoCliente{
 	private int numeroCuenta;
 	private CuentaBancaria cuenta;
 
+	public Cliente() {
+		super();
+	}
+
 	public Cliente(String rut, String nombre, String apellidoPaterno, String apellidoMaterno, String domicilio,
 			String comuna, String telefono, String tipoCuenta, int numeroCuenta) {
 		this.rut = rut;

@@ -2,9 +2,9 @@ package com.bankeurope.banco;
 
 import com.bankeurope.banco.managers.BancoManager;
 import com.bankeurope.banco.clientes.Cliente;
+import com.bankeurope.banco.cuentas.validaciones.ValidarIngresoDatos;
 import com.bankeurope.banco.utilidades.Grafico;
 import com.bankeurope.banco.utilidades.Pausa;
-import com.bankeurope.banco.utilidades.ValidarIngresoDatos;
 
 import java.util.Scanner;
 

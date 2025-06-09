@@ -1,5 +1,8 @@
 package com.bankeurope.banco.managers;
-
+/*
+ * Clase singleton que gestiona los clientes del banco.
+ * Permite agregar, buscar clientes y cargar datos iniciales de prueba.
+ */
 import com.bankeurope.banco.clientes.Cliente;
 import java.util.HashMap;
 import java.util.Map;

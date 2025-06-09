@@ -1,5 +1,7 @@
 package com.bankeurope.banco.cuentas.tipocuenta;
-
+/*
+ * Cuenta Digital que aplica una comisión del 0.5% en cada giro. Hereda de CuentaBancaria.
+ */
 import java.util.Scanner;
 
 import com.bankeurope.banco.cuentas.CuentaBancaria;
@@ -9,6 +11,10 @@ import com.bankeurope.banco.utilidades.Pausa;
 public class CuentaDigital extends CuentaBancaria {
 	private double comision;
 	
+	public CuentaDigital(int numeroCuenta) {
+		super(numeroCuenta);
+	}
+
 	public CuentaDigital(int numeroCuenta, int saldo) {
 		super(numeroCuenta, saldo);
 	}

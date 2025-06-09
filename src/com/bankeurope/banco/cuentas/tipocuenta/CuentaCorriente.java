@@ -1,5 +1,7 @@
 package com.bankeurope.banco.cuentas.tipocuenta;
-
+/*
+ * Cuenta Corriente que permite sobregirar hasta $500.000. Hereda de CuentaBancaria.
+ */
 import java.util.Scanner;
 
 import com.bankeurope.banco.cuentas.CuentaBancaria;
@@ -9,6 +11,10 @@ import com.bankeurope.banco.utilidades.Pausa;
 public class CuentaCorriente extends CuentaBancaria {
 	private int sobregiro = 500000;
 	
+	public CuentaCorriente(int numeroCuenta) {
+		super(numeroCuenta);
+	}
+
 	public CuentaCorriente(int numeroCuenta, int saldo) {
 		super(numeroCuenta, saldo);
 	}

@@ -1,4 +1,4 @@
-package com.bankeurope.banco.utilidades;
+package com.bankeurope.banco.cuentas.validaciones;
 
 import java.util.InputMismatchException;
 

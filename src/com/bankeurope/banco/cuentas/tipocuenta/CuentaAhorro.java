@@ -1,4 +1,7 @@
 package com.bankeurope.banco.cuentas.tipocuenta;
+/*
+ * Cuenta de ahorro que aplica un interés del 2% sobre el saldo en cada depósito. Hereda de CuentaBancaria.
+ */
 
 import java.util.Scanner;
 
@@ -9,6 +12,10 @@ import com.bankeurope.banco.utilidades.Pausa;
 public class CuentaAhorro extends CuentaBancaria {
 	private double interes;
 	
+	public CuentaAhorro(int numeroCuenta) {
+		super(numeroCuenta);
+	}
+
 	public CuentaAhorro(int numeroCuenta, int saldo) {
 		super(numeroCuenta, saldo);
 	}
@@ -42,7 +49,7 @@ public class CuentaAhorro extends CuentaBancaria {
 		}
 	}
 	
-	//**************** INTERES TOTAL DEL 2% APLICADO EN CADA DEPOSITO
+	// Calcular y aplicar interés del 2% sobre el saldo actual
 	@Override
 	public void calcularInteres() {
 	    interes = saldo * 0.02;
